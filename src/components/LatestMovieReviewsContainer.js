@@ -16,7 +16,7 @@ class LatestMovieReviewsContainer extends React.Components{
   handleFetch() {
     fetch(URL)
       .then(res => res.json())
-      .then(data => data)
+      .then(data => this.setStatae(data))
   }
   render(){
     return(null)
